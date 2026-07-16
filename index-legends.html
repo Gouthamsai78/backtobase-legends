@@ -47,7 +47,8 @@
   .btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--plum)}
   .btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--plum)}
   .btn-ghost{background:#fff}
-  .chip{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:.86rem;padding:8px 15px;border-radius:999px;background:#fff;border:2px solid var(--plum);color:var(--plum-ink)}
+  .chip{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:.86rem;padding:8px 15px;border-radius:999px;background:#fff;border:2px solid var(--plum);color:var(--plum-ink);box-shadow:3px 3px 0 var(--plum);transition:transform .22s var(--ease),box-shadow .22s var(--ease)}
+  .chip:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--plum)}
 
   /* cartoon sticker */
   .sticker{
@@ -65,8 +66,9 @@
   /* nav — solid, no glass */
   header.nav{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:3px solid var(--plum)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 22px;max-width:var(--maxw);margin:0 auto}
-  .brand{display:flex;align-items:center;gap:11px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.28rem;color:var(--plum)}
-  .brand .mark{width:34px;height:34px;border-radius:11px;object-fit:cover;background:var(--saffron);border:3px solid var(--plum);box-shadow:3px 3px 0 var(--plum)}
+  .brand{display:flex;align-items:center;gap:13px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.4rem;color:var(--plum)}
+  .brand .mark{width:46px;height:46px;border-radius:13px;object-fit:cover;background:var(--saffron);border:3px solid var(--plum);box-shadow:3px 3px 0 var(--plum);transition:transform .22s var(--ease)}
+  .brand:hover .mark{transform:rotate(-6deg) scale(1.06)}
   .nav-links{display:flex;gap:22px;font-weight:600;font-size:.96rem;color:var(--plum-ink)}
   .nav-links a{position:relative;padding:4px 0}
   .nav-links a:hover{color:var(--plum)}
@@ -160,7 +162,8 @@
   .legends .wrap{max-width:var(--maxw)}
   .legends h2{font-size:clamp(2rem,5vw,3.4rem);text-align:center;color:var(--plum);text-wrap:balance}
   .legend-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:44px}
-  .legend{background:#fff;border:3px solid var(--plum);border-radius:var(--radius);overflow:hidden;box-shadow:6px 6px 0 var(--plum)}
+  .legend{background:#fff;border:3px solid var(--plum);border-radius:var(--radius);overflow:hidden;box-shadow:6px 6px 0 var(--plum);transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+  .legend:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--plum)}
   .legend img{width:100%;aspect-ratio:4/3;object-fit:cover}
   .legend .lb{padding:13px 15px}
   .legend .lb b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem;color:var(--plum)}
@@ -181,7 +184,8 @@
   .join p{color:var(--plum-ink);max-width:540px;margin:18px auto 0;font-size:1.1rem;font-weight:500}
   .join .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:32px}
   .socials{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
-  .socials a{background:rgba(255,255,255,.85);color:var(--plum-ink);font-weight:700;padding:10px 18px;border-radius:999px;border:2px solid var(--plum)}
+  .socials a{background:rgba(255,255,255,.85);color:var(--plum-ink);font-weight:700;padding:10px 18px;border-radius:999px;border:2px solid var(--plum);box-shadow:3px 3px 0 var(--plum);transition:transform .22s var(--ease),box-shadow .22s var(--ease)}
+  .socials a:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--plum)}
 
   footer{background:var(--paper-2);color:var(--plum-ink);padding:42px 0;text-align:center;font-size:.92rem;border-top:3px solid var(--plum)}
   footer a{color:var(--plum);font-weight:700}
@@ -229,7 +233,7 @@
 
 <header class="nav">
   <div class="nav-inner">
-    <a class="brand" href="#top"><img class="mark" src="assets/logo.jpg" alt="BacktoBase" width="34" height="34" />BacktoBase</a>
+    <a class="brand" href="#top"><img class="mark" src="assets/logo.jpg" alt="BacktoBase" width="46" height="46" />BacktoBase</a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#path">The Path</a>
       <a href="#edition6">Edition 6</a>
@@ -469,6 +473,7 @@
     <div class="fbrand">BacktoBase 🔥</div>
     <div>Legends Upgrade · It's a Movement · Hyderabad, India</div>
     <div style="margin-top:10px"><a href="https://backtobase.in" target="_blank" rel="noopener">backtobase.in</a> · built for students, by students</div>
+    <div style="margin-top:6px;font-size:.82rem;opacity:.7">Built with ❤️ by Goutham Sai · BacktoBase team</div>
   </div>
 </footer>
 
